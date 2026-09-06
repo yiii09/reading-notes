@@ -12,7 +12,7 @@
 .eyebrow{font:12px/1.2 Arial,sans-serif;letter-spacing:3px;color:var(--accent);text-transform:uppercase}.title{font-size:clamp(38px,6vw,68px);margin:12px 0 6px;line-height:1.2}.author{font-size:18px;color:var(--muted)}.status{display:inline-block;margin-top:22px;padding:7px 14px;border-radius:999px;background:var(--soft);color:var(--accent);font-family:Arial,sans-serif;font-size:14px}
 section{margin:26px 0;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:34px}.section-label{font:12px Arial,sans-serif;letter-spacing:2px;color:var(--accent);margin-bottom:8px}.section-title{font-size:28px;margin:0 0 18px}
 .meta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.meta-item{padding:16px;background:#faf8f4;border-radius:12px}.meta-item span{display:block;font:11px Arial,sans-serif;color:var(--muted);letter-spacing:1px}.meta-item strong{font-size:16px}
-.progress-wrap{margin:20px 0}.progress-head{display:flex;justify-content:space-between;font-family:Arial,sans-serif}.bar{height:12px;background:#ece7df;border-radius:999px;overflow:hidden;margin-top:10px}.bar i{display:block;height:100%;width:0%;background:linear-gradient(90deg,#9a8066,#c4ad91);border-radius:999px}
+.progress-wrap{margin:20px 0}.progress-head{display:flex;justify-content:space-between;font-family:Arial,sans-serif}.bar{height:12px;background:#ece7df;border-radius:999px;overflow:hidden;margin-top:10px}.bar i{display:block;height:100%;width:5%;background:linear-gradient(90deg,#9a8066,#c4ad91);border-radius:999px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{padding:22px 16px;border:1px solid var(--line);border-radius:14px}.stat b{display:block;font-size:27px}.stat span{font:12px Arial,sans-serif;color:var(--muted)}
 .toc a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:inherit;text-decoration:none}.timeline{position:relative;padding-left:34px}.timeline:before{content:"";position:absolute;left:8px;top:10px;bottom:10px;width:1px;background:#d8cec2}.reading{position:relative;margin:0 0 38px}.reading:before{content:"";position:absolute;left:-31px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--accent);border:4px solid var(--paper)}.reading-card{padding:26px;background:#faf8f4;border-radius:16px}.reading-title{font-size:26px;margin:0 0 8px}.reading-info{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-family:Arial,sans-serif;font-size:13px}.block{margin-top:22px}.block h4{margin:0 0 8px;font-size:16px}.quote{margin:16px 0;padding:24px;border-left:3px solid var(--accent);background:#fffdf9;font-size:20px}.reflection{padding:18px 20px;background:#f1ece5;border-radius:12px}
 .final{display:none}.final.completed{display:block}
@@ -75,7 +75,7 @@ section{margin:26px 0;background:var(--paper);border:1px solid var(--line);borde
   <div class="section-label">READING JOURNEY</div>
   <h2 class="section-title">阅读记录目录</h2>
   <!-- READING_TOC_START -->
-  <div class="toc"><em>暂无阅读记录</em></div>
+  <div class="toc"><a href="#reading-01">01 · 第一次阅读</a></div>
   <!-- READING_TOC_END -->
 </section>
 
@@ -83,7 +83,34 @@ section{margin:26px 0;background:var(--paper);border:1px solid var(--line);borde
   <div class="section-label">MY READING JOURNEY</div>
   <h2 class="section-title">阅读旅程</h2>
   <!-- READING_LOGS_START -->
-  <div class="timeline"><p style="color:var(--muted)">从第一次阅读开始记录你的阅读旅程。</p></div>
+  <div class="timeline">
+  <article class="reading" id="reading-01">
+    <div class="reading-card">
+      <h3 class="reading-title">第 01 次阅读</h3>
+      <div class="reading-info"><span>2026.09.06</span><span>1 — 18 页</span><span>18 页</span><span>第 1 章</span><span>40 分钟</span></div>
+
+      <div class="block">
+        <h4>📝 内容概述</h4>
+        <div>全书的开始讲了智人，也就是现在人类的祖先，是如何出现的。</div>
+      </div>
+
+      <div class="block">
+        <h4>💬 金句摘抄</h4>
+        <div class="quote">“人类历史上众多的灾难，不论生灵涂炭的战乱还是生态遭逢的浩劫，其实都是源自这场过于仓促的地位跳跃。”</div>
+      </div>
+
+      <div class="block">
+        <h4>💡 金句感悟</h4>
+        <div class="reflection">这句话读起来感觉好宏大，原来现在这些很让人悲伤的事情都只是源于我们进步得太快。</div>
+      </div>
+
+      <div class="block">
+        <h4>🧠 本次阅读感悟</h4>
+        <div class="reflection">这确实是一本值得看下去的书，文字用语读起来很舒服，就是插图有的有点吓人。</div>
+      </div>
+    </div>
+  </article>
+</div>
   <!-- READING_LOGS_END -->
 </section>
 
